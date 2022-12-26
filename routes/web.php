@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// a GET request handler, determines what view to fetch
+Route::get('/pizza', function () {
+    return view('pizza');
+});
