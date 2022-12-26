@@ -21,4 +21,5 @@ Route::get('/', function () {
 // a GET request handler, determines what view to fetch
 Route::get('/pizza', function () {
     return view('pizza');
+    // view
 });
