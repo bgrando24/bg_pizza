@@ -20,6 +20,13 @@ Route::get('/', function () {
 
 // a GET request handler, determines what view to fetch
 Route::get('/pizza', function () {
-    return view('pizza');
-    // view
+    // pretend we get data from a DB and are passing it into an array in the view below
+    
+    $pizzas = [
+        ['type' => 'BBQ Chicken', 'base' => 'Thin'      ],
+        ['type' => 'Cheese'     , 'base' => 'Regular'   ],
+        ['type' => 'Margarita'  , 'base' => 'Thick'     ]
+    ];
+
+    return view('pizza', ['pizzas' => $pizzas]);
 });
