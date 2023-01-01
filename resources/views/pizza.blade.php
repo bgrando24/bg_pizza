@@ -7,7 +7,9 @@
         
 
         <div class="d-flex flex-column text-center">
-            <h1>Pizzas</h1>
+            <h1 class="content title">Pizzas</h1>
+            <p>{{ $name }}</p>
+            <p>{{ $age }}</p>
             <!-- accessing variables from the route handler for this view -->
             
 

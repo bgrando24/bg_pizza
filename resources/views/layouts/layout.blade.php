@@ -11,7 +11,7 @@
 
         <!-- Styles -->
         <!-- Because the 'public' folder is made available to the browser at root level, we don't need to specify './public/...' -->
-        <link href="/css/main.css">
+        <link href="/css/main.css" rel="stylesheet">
     
     </head>
     <body class="antialiased">

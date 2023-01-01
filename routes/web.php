@@ -28,5 +28,10 @@ Route::get('/pizza', function () {
         ['type' => 'Margarita'  , 'base' => 'Thick'     ]
     ];
 
-    return view('pizza', ['pizzas' => $pizzas]);
+
+    return view('pizza', [
+        'pizzas' => $pizzas,
+        'name' => request('name'),
+        'age' => request('age')
+    ]);
 });
