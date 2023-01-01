@@ -8,14 +8,14 @@
 
         <div class="d-flex flex-column text-center">
             <h1 class="content title">Pizzas</h1>
-            <p>{{ $name }}</p>
-            <p>{{ $age }}</p>
-            <!-- accessing variables from the route handler for this view -->
+            
             
 
             <!-- Blade directives -->
             @foreach($pizzas as $pizza)
-                <p>{{ $loop->index }} {{ $pizza['type'] }} - {{ $pizza['base'] }}</p>
+                <div>
+                    {{ $pizza->name }} - {{ $pizza->type }} - {{ $pizza->base }}
+                </div>
             @endforeach
 
         </div>
