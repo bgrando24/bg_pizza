@@ -13,12 +13,9 @@
         <div class="content d-flex flex-column justify-between">
 
         <div>
-            {{-- <a href="/">
-                <img class="image" src="/img/pizza-house.png" alt="pizza house logo">
-            </a> --}}
             
-            <div class="title d-flex justify-center">
-                Gippsland's Greatest Pizza
+            <div class="title">
+                BG's Pizza
             </div>
         </div>
         
