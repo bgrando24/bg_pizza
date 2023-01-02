@@ -23,16 +23,20 @@
         <div class="content d-flex flex-column justify-between">
 
         <div>
-            <img src="/img/pizza-house.png" alt="pizza house logo">
+            <a href="/">
+                <img class="image" src="/img/pizza-house.png" alt="pizza house logo">
+            </a>
+            
             <div class="title d-flex justify-center">
                 Gippsland's Greatest Pizza
             </div>
         </div>
         
+        <p class="message">{{ session('message') }}</p>
 
         <div class="nav">
             <div>
-                <a href="/pizza">Order Pizza</a>
+                <a href="/pizzas/create">Order Pizza</a>
             </div>
         </div>
 

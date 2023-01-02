@@ -304,6 +304,7 @@ video{
 
 footer {
     background: #eee;
+    color: #888;
     padding: 20px;
     text-align: center;
 }
@@ -312,10 +313,17 @@ footer {
     text-align: center;
 }
 
+.image {
+    height: auto;
+    width: 50vw;
+    max-width: max-content;
+}
+
 .title {
-    font-size: 50px;
+    font-size: 5vw;
     font-weight: 100;
     text-transform: uppercase;
+    text-align: center;
     border-bottom: 2px solid;
     padding: 12px 0;
     color: #5e2195;
@@ -333,4 +341,21 @@ footer {
 
 .nav a:hover{
     transform: scale(1.1);
+}
+
+.message {
+    font-size: 120%;
+    font-weight: bold;
+    color: #5e2195;
+    animation: order-confirm-shake 2s ease-in-out infinite;
+}
+
+/* order confirmation message animation */
+@keyframes order-confirm-shake {
+    0%   { transform: translate(0px);   }
+    10%  { transform: translate(5px);   }
+    20%  { transform: translate(0px);   }
+    30%  { transform: translate(-5px);  }
+    40%  { transform: translate(0px);   } 
+    100% { transform: translate(0px);   }
 }

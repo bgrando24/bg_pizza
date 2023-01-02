@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Pizza extends Model
 {
     use HasFactory;
+    protected $casts = [
+        'toppings' => "array"   // for casting toppings array to json to store in db and visa-versa when retrieving
+    ];
 }
