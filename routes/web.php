@@ -4,7 +4,7 @@ use App\Http\Controllers\PizzaController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
-
+// welcome page
 Route::get('/', function () {
     return view('welcome');
 });
