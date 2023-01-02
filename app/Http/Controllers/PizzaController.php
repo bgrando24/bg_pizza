@@ -6,11 +6,18 @@ use Illuminate\Http\Request;
 use App\Models\Pizza;
 use App\Models\User;
 
+
+//Handles all pizza base routes
 class PizzaController extends Controller
 {
-    //Handles all pizza base routes
 
-    // base route
+    // // constructor
+    // public function __construct() {
+    //     $this->middleware('auth');  // applies auth middleware to all route handlers in this controller
+    // }
+    
+
+    // display all orders
     public function index() {
         
         // using Pizza model to get DB data
@@ -58,10 +65,10 @@ class PizzaController extends Controller
 
     // delete an order in db
     public function destroy($id) {
-        $pId = $id; // saving id in separate variable to be used in confirmation message
         $pizza = Pizza::findOrFail($id);
+        $orderName = $pizza->name; // saving id in separate variable to be used in confirmation message
         $pizza->delete();   //delete from db
 
-        return redirect('/pizzas')->with('message', "Pizza id $pId deleted");
+        return redirect('/pizzas')->with('message', "Pizza for $orderName deleted");
     }
 }

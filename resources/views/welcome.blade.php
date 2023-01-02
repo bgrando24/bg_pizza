@@ -40,7 +40,7 @@
             @endif
 
             <div>
-                <a href="/pizzas/create">Order Pizza</a>
+                <a href="{{ route('pizzas.create') }}">Order Pizza</a>
             </div>
         </div>
 

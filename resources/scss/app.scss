@@ -361,6 +361,10 @@ footer {
     100% { transform: translate(0px);   }
 }
 
+.view-orders {
+    font-weight: 800;
+}
+
 
 
 
@@ -429,9 +433,26 @@ html, body {
   }
   
   .wrapper{
+    justify-items: center;
     max-width: 1140px;
     padding: 10px;
     margin: 20px auto;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .complete-order-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pizza-icon {
+    height: 5vh;
+    width: auto;
+    display: inline-block;
+    margin: 0 1% 0 1%;
   }
   
   /* create pizza form */
@@ -505,17 +526,19 @@ html, body {
       margin: 10px 0;
       padding: 12px;
       background: #f4f4f4;
-      img{
-        width: 60px;
-        display: inline-block;
-      }
+    //   img{
+    //     width: 60px;
+    //     display: inline-block;
+    //   }
       h4{
         display: inline-block;
         font-weight: normal;
-        margin-left: 20px;
+        width: 100%;
+        // margin-left: 20px;
         a{
           color: #777;
           text-decoration: none !important;
+          width: max-content;
         }
       }
     }

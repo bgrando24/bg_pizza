@@ -6,7 +6,7 @@
     <div class="wrapper create-pizza">
         <h1>Order a pizza</h1>
 
-        <form action="/pizzas" method="POST">
+        <form action="{{ route('pizzas.store') }}" method="POST">
             <!-- cross-site request forgery -->
             @csrf
 

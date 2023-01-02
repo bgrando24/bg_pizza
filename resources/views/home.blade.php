@@ -15,7 +15,7 @@
                     @endif
 
                     {{ __('You are logged in!') }}
-                    <p class="my-3 font-weight-bold"><a href="/pizzas">View Orders</a></p>
+                    <p class="my-3 view-orders"><a href="{{ route("pizzas.index") }}">View Orders</a></p>
                 </div>
             </div>
         </div>

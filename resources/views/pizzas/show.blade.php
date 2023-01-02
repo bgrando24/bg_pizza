@@ -4,7 +4,7 @@
     @section('content')
     
         <div class="wrapper pizza-details">
-            <h1>
+            <h1 class="center">
                 Order for {{ $pizza->name }}
             </h1>
             <p class="type">
@@ -29,13 +29,16 @@
         </div>
 
         <!-- complete order button (delete from list) -->
-        <form action="/pizzas/{{ $pizza->id }}" method="POST">
+        <form action="{{ route("pizzas.destroy", $pizza->id) }}" method="POST">
             @csrf
             @method('DELETE')
-            <button>Complete Order</button>
+            <div class="complete-order-wrapper">
+                <button>Complete Order</button>
+            </div>
+            
         </form>
 
 
-        <a href='/pizzas' class="back"> <- Back to all pizzas</a>
+        <a href='{{ route("pizzas.index") }}' class="back"> <- Back to all pizzas</a>
 
     @endsection
