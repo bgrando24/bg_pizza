@@ -10,13 +10,13 @@
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <!-- Because the 'public' folder is made available to the browser at root level, we don't need to specify './public/...' -->
         <link href="/css/main.css" rel="stylesheet">
+
+        @vite(['resources/css/app.css', 'resources/scss/app.scss' , 'resources/js/app.js'])
     
     </head>
     <body class="antialiased">
 
-        <!-- We defined content of the same name in the view files, this tells blade where to insert it in the layout file -->
         @yield('content')
 
 

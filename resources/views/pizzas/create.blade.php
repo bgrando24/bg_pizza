@@ -1,7 +1,6 @@
 
-@extends('layouts.layout')
+@extends('layouts.app')
 
-<!-- defines where to start and end the layout file -->
 @section('content')
 
     <div class="wrapper create-pizza">

@@ -1,5 +1,5 @@
 
-@extends('layouts.layout')
+@extends('layouts.app')
 
     @section('content')
     
@@ -18,7 +18,7 @@
             </p>
 
             @if($pizza->toppings == null)
-                <p>No extra toppings</p>
+                <p class="no-toppings">No extra toppings</p>
             @else
             <ul>
                 @foreach ($pizza->toppings as $topping)
@@ -34,7 +34,7 @@
             @method('DELETE')
             <button>Complete Order</button>
         </form>
-        
+
 
         <a href='/pizzas' class="back"> <- Back to all pizzas</a>
 
