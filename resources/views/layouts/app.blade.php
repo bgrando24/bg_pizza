@@ -10,17 +10,12 @@
     <title>BG's Pizza</title>
 
     <!-- Scripts -->
-    <script src="\resources\js\bootstrap.js"></script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
     @viteReactRefresh
     @vite(['resources/sass/app.scss', 'resources/css/app.css', 'resources/scss/app.scss', 'resources/js/app.js'])
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
-    <!-- Styles -->
-    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 
 </head>
 

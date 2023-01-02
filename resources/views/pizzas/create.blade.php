@@ -42,7 +42,7 @@
                 <input type="checkbox" name='toppings[]' value="anchovies">Anchovies
             </fieldset>
 
-            <input type="submit" value="order Pizza">
+            <input type="submit" value="Order Pizza">
 
         </form>
 
