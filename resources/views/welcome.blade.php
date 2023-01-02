@@ -5,15 +5,17 @@
     @section('content')
         
     
-    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center py-4 sm:pt-0">
+    <div class=" img-background relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center py-4 sm:pt-0">
+
+        {{-- <img src="/img/pizza-background.jpg" alt="pizza restaurant"> --}}
         
 
         <div class="content d-flex flex-column justify-between">
 
         <div>
-            <a href="/">
+            {{-- <a href="/">
                 <img class="image" src="/img/pizza-house.png" alt="pizza house logo">
-            </a>
+            </a> --}}
             
             <div class="title d-flex justify-center">
                 Gippsland's Greatest Pizza
@@ -27,7 +29,7 @@
             @if (Route::has('login'))
             <div class=" d-flex flex-column items-center">
                 @auth
-                    <a href="{{ url('/home') }}" class=" text-center text-gray-700 dark:text-gray-500">Home</a>
+                    <a href="{{ url('/home') }}" class=" text-center">Home</a>
                 @else
                     <a href="{{ route('login') }}" >Log in</a>
 

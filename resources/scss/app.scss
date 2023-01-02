@@ -303,6 +303,11 @@ video{
     font-family: 'Nunito', sans-serif;
 }
 
+.img-background {
+    background-image: url("../../public/img/pizza-background.jpg");
+    background-size: cover;
+}
+
 footer {
     background: #eee;
     color: #888;
@@ -333,6 +338,7 @@ footer {
 .nav { 
     margin: 5% 0;
     font-size: larger;
+    color: white;
 }
 
 .nav a{
@@ -429,7 +435,7 @@ html, body {
     text-transform: uppercase;
     border-bottom: 2px solid;
     padding: 12px 0;
-    color: #5e2195;
+    color: #fff;
   }
   
   .wrapper{

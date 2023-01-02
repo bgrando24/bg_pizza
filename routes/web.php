@@ -26,7 +26,7 @@ Route::delete('/pizzas/{id}', [PizzaController::class, 'destroy'])->name('pizzas
 
 // authentication
 Auth::routes([
-    'register' => false // prevents routes matching the key from generating
+    // 'register' => false // prevents routes matching the key from generating
 ]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
